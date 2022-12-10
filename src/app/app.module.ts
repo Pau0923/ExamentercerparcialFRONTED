@@ -4,13 +4,34 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//modulos
+
+import { SharedModule } from './shared/shared.module';
+
+//componentes
+
+import { AgregarEditarPersonaComponent } from './components/agregar-editar-persona/agregar-editar-persona.component';
+import { ListadoPersonaComponent } from './components/listado-persona/listado-persona.component';
+import { VerPersonaComponent } from './components/ver-persona/ver-persona.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AgregarEditarPersonaComponent,
+    ListadoPersonaComponent,
+    VerPersonaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    SharedModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
